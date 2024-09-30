@@ -30,7 +30,7 @@ const shapes = [
 			const base = Number(document.getElementById("base").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 0.5 * base * height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  " m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
 	// Area of a circle
@@ -45,7 +45,7 @@ const shapes = [
 		eventListener: () => {
 			const radius = Number(document.getElementById("radius").value);
 			const area = Math.PI * radius * radius;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  " m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
 	// Area of a trapezoid
@@ -64,7 +64,7 @@ const shapes = [
 			const base2 = Number(document.getElementById("base2").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 0.5 * (base1 + base2) * height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a parallelogram
@@ -81,7 +81,7 @@ const shapes = [
 			const base = Number(document.getElementById("base").value);
 			const height = Number(document.getElementById("height").value);
 			const area = base * height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a rhombus
@@ -98,7 +98,7 @@ const shapes = [
 			const d1 = Number(document.getElementById("d1").value);
 			const d2 = Number(document.getElementById("d2").value);
 			const area = 0.5 * d1 * d2;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a kite
@@ -115,7 +115,7 @@ const shapes = [
 			const d1 = Number(document.getElementById("d1").value);
 			const d2 = Number(document.getElementById("d2").value);
 			const area = 0.5 * d1 * d2;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a polygon
@@ -132,7 +132,7 @@ const shapes = [
 			const n = Number(document.getElementById("n").value);
 			const s = Number(document.getElementById("s").value);
 			const area = 0.5 * n * s * s * Math.cot(Math.PI / n);
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a sector
@@ -149,7 +149,7 @@ const shapes = [
 			const angle = Number(document.getElementById("angle").value);
 			const radius = Number(document.getElementById("radius").value);
 			const area = (angle / 360) * Math.PI * radius * radius;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a segment
@@ -166,7 +166,7 @@ const shapes = [
 			const radius = Number(document.getElementById("radius").value);
 			const angle = Number(document.getElementById("angle").value);
 			const area = 0.5 * radius * radius * (angle - Math.sin(angle));
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 
@@ -475,7 +475,7 @@ const shapes = [
 		eventListener: () => {
 			const side = Number(document.getElementById("side").value);
 			const area = 6 * side * side;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Rectangular Prism
@@ -494,7 +494,7 @@ const shapes = [
 			const width = Number(document.getElementById("width").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 2 * (length * width + length * height + width * height);
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Sphere
@@ -509,7 +509,7 @@ const shapes = [
 		eventListener: () => {
 			const radius = Number(document.getElementById("radius").value);
 			const area = 4 * Math.PI * radius * radius;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Cylinder
@@ -526,7 +526,7 @@ const shapes = [
 			const radius = Number(document.getElementById("radius").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 2 * Math.PI * radius * (radius + height);
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Cone
@@ -543,7 +543,7 @@ const shapes = [
 			const radius = Number(document.getElementById("radius").value);
 			const slant_height = Number(document.getElementById("slant_height").value);
 			const area = Math.PI * radius * (radius + slant_height);
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Pyramid
@@ -560,7 +560,7 @@ const shapes = [
 			const base_area = Number(document.getElementById("base_area").value);
 			const perimeter = Number(document.getElementById("perimeter").value);
 			const area = base_area + perimeter.toFixed(2) + "m";
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 
@@ -576,7 +576,7 @@ const shapes = [
 		eventListener: () => {
 			const side = Number(document.getElementById("side").value);
 			const area = 4 * side * side;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Rectangular Prism
@@ -595,7 +595,7 @@ const shapes = [
 			const width = Number(document.getElementById("width").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 2 * height * (length + width);
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Sphere
@@ -610,7 +610,7 @@ const shapes = [
 		eventListener: () => {
 			const radius = Number(document.getElementById("radius").value);
 			const area = 4 * Math.PI * radius * radius;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Cylinder
@@ -627,7 +627,7 @@ const shapes = [
 			const radius = Number(document.getElementById("radius").value);
 			const height = Number(document.getElementById("height").value);
 			const area = 2 * Math.PI * radius * height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Cone
@@ -644,7 +644,7 @@ const shapes = [
 			const radius = Number(document.getElementById("radius").value);
 			const slant_height = Number(document.getElementById("slant_height").value);
 			const area = Math.PI * radius * slant_height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Pyramid
@@ -661,22 +661,19 @@ const shapes = [
 			const perimeter = Number(document.getElementById("perimeter").value);
 			const slant_height = Number(document.getElementById("slant_height").value);
 			const area = perimeter * slant_height;
-			document.getElementById("result").innerHTML = area.toFixed(2) +  "m<sup>2</sup>";
+			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 ];
 
 const calculate = (call) => {
 	let shape = shapes[call];
+	const card = document.querySelector(".card");
 	document.getElementById("title").innerHTML = shape.name;
 	document.getElementById("formula").innerHTML = shape.formula;
 	document.getElementById("result").innerHTML = "";
-	const form = document.getElementsByTagName("form")[0];
-	form.onsubmit = (event) => {
-		event.preventDefault();
-		shape[call].eventListener();
-	};
-	form.innerHTML = `
+	card.querySelector(".card-body").innerHTML = `
+		<form onsubmit="event.preventDefault(); shapes[${call}].eventListener();">
 				${Object.entries(shape.form.elements).map(([key, value]) => `
 					<div class="form-group">
 						<label for="${value}">${key}</label>
@@ -686,6 +683,7 @@ const calculate = (call) => {
 				<div class="form-group">
 					<input type="submit" value="Calculate">
 				</div>
+			</form>
 	`;
 }
 
