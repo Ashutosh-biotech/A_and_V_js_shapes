@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Area and volume of shapes</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="shortcut icon" href="./assets/images/shapes.png" type="image/x-icon">
+</head>
+<body>
+	<aside>
+		<div class="logo">
+			<img src="./assets/images/shapes.png" alt="Shapes">
+		</div>
+		<div class="menu">
+			<ul></ul>
+		</div>
+	</aside>
+	<main>
+		<div class="card">
+			<div class="card-header">
+				<h1 id="title">Area of a rectangle</h1>
+				<p id="formula">length * width</p>
+			</div>
+			<div class="card-body">
+				<form onsubmit="event.preventDefault(); shapes[0].eventListener();">
+					<div class="form-group">
+						<label for="length">Length</label>
+						<input type="number" id="length" name="length" required>
+					</div>
+					<div class="form-group">
+						<label for="width">Width</label>
+						<input type="number" id="width" name="width" required>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Calculate">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<code id="result"></code>
+			</div>
+		</div>
+	</main>
+</body>
+<script src="./assets/js/scripts.js"></script>
+</html>
