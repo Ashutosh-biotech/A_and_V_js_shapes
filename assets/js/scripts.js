@@ -687,6 +687,8 @@ const calculate = (call) => {
 	`;
 }
 
+calculate(0);
+
 const menu = document.querySelector(".menu ul");
 let count = 0;
 
