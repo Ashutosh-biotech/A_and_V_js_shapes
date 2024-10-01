@@ -10,9 +10,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const area = length * width;
+			const area = Number(length.value) * Number(width.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
@@ -27,9 +25,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const base = Number(document.getElementById("base").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 0.5 * base * height;
+			const area = 0.5 * Number(base.value) * Number(height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
@@ -43,8 +39,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const area = Math.PI * radius * radius;
+			const area = Math.PI * Math.pow(Number(radius.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
@@ -60,10 +55,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const base1 = Number(document.getElementById("base1").value);
-			const base2 = Number(document.getElementById("base2").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 0.5 * (base1 + base2) * height;
+			const area = 0.5 * (Number(base1.value) + Number(base2.value)) * Number(height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -78,9 +70,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const base = Number(document.getElementById("base").value);
-			const height = Number(document.getElementById("height").value);
-			const area = base * height;
+			const area = Number(base.value) * Number(height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -95,9 +85,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const d1 = Number(document.getElementById("d1").value);
-			const d2 = Number(document.getElementById("d2").value);
-			const area = 0.5 * d1 * d2;
+			const area = 0.5 * Number(d1.value) * Number(d2.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -112,9 +100,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const d1 = Number(document.getElementById("d1").value);
-			const d2 = Number(document.getElementById("d2").value);
-			const area = 0.5 * d1 * d2;
+			const area = 0.5 * Number(d1.value) * Number(d2.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -129,9 +115,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const n = Number(document.getElementById("n").value);
-			const s = Number(document.getElementById("s").value);
-			const area = 0.5 * n * s * s * Math.cot(Math.PI / n);
+			const area = 0.5 * Number(n.value) * Math.pow(Number(s.value), 2) * Math.cot(Math.PI / Number(n.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -146,9 +130,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const angle = Number(document.getElementById("angle").value);
-			const radius = Number(document.getElementById("radius").value);
-			const area = (angle / 360) * Math.PI * radius * radius;
+			const area = (Number(angle.value) / 360) * Math.PI * Math.pow(Number(radius.value), 2);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -163,9 +145,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const angle = Number(document.getElementById("angle").value);
-			const area = 0.5 * radius * radius * (angle - Math.sin(angle));
+			const area = 0.5 * Math.pow(Number(radius.value), 2) * (Number(angle.value) - Math.sin(Number(angle.value)));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -181,9 +161,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const perimeter = 2 * (length + width);
+			const perimeter = 2 * (Number(length.value) + Number(width.value));
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -199,10 +177,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const a = Number(document.getElementById("a").value);
-			const b = Number(document.getElementById("b").value);
-			const c = Number(document.getElementById("c").value);
-			const perimeter = a + b + c;
+			const perimeter = Number(a.value) + Number(b.value) + Number(c.value);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -216,8 +191,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const perimeter = 2 * Math.PI * radius;
+			const perimeter = 2 * Math.PI * Number(radius.value);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -234,11 +208,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const a = Number(document.getElementById("a").value);
-			const b = Number(document.getElementById("b").value);
-			const c = Number(document.getElementById("c").value);
-			const d = Number(document.getElementById("d").value);
-			const perimeter = a + b + c + d;
+			const perimeter = Number(a.value) + Number(b.value) + Number(c.value) + Number(d.value);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -253,9 +223,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const perimeter = 2 * (length + width);
+			const perimeter = 2 * (Number(length.value) + Number(width.value));
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -269,8 +237,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const side = Number(document.getElementById("side").value);
-			const perimeter = 4 * side;
+			const perimeter = 4 * Number(side.value);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -285,9 +252,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const side1 = Number(document.getElementById("side1").value);
-			const side2 = Number(document.getElementById("side2").value);
-			const perimeter = 2 * (side1 + side2);
+			const perimeter = 2 * (side1 + Number(side2.value));
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -302,9 +267,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const n = Number(document.getElementById("n").value);
-			const side = Number(document.getElementById("side").value);
-			const perimeter = n * side;
+			const perimeter = Number(n.value) * Number(side.value);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -319,9 +282,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const angle = Number(document.getElementById("angle").value);
-			const perimeter = radius * (angle + 2);
+			const perimeter = Number(radius.value) * (Number(angle.value) + 2);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -336,9 +297,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const angle = Number(document.getElementById("angle").value);
-			const perimeter = radius * (angle + 2);
+			const perimeter = Number(radius.value) * (Number(angle.value) + 2);
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -353,8 +312,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const side = Number(document.getElementById("side").value);
-			const volume = side * side * side;
+			const volume = Math.pow(Number(side.value), 3);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -370,10 +328,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const height = Number(document.getElementById("height").value);
-			const volume = length * width * height;
+			const volume = Number(length.value) * Number(width.value) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -387,8 +342,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const volume = (4 / 3) * Math.PI * radius * radius * radius;
+			const volume = (4 / 3) * Math.PI * Math.pow(Number(radius.value), 3);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -403,9 +357,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const height = Number(document.getElementById("height").value);
-			const volume = Math.PI * radius * radius * height;
+			const volume = Math.PI * Math.pow(Number(radius.value), 2) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -420,9 +372,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const height = Number(document.getElementById("height").value);
-			const volume = (1 / 3) * Math.PI * radius * radius * height;
+			const volume = (1 / 3) * Math.PI * Math.pow(Number(radius.value), 2) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -437,9 +387,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const base_area = Number(document.getElementById("base_area").value);
-			const height = Number(document.getElementById("height").value);
-			const volume = (1 / 3) * base_area * height;
+			const volume = (1 / 3) * Number(base_area.value) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -455,10 +403,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const major_radius = Number(document.getElementById("major_radius").value);
-			const minor_radius = Number(document.getElementById("minor_radius").value);
-			const height = Number(document.getElementById("height").value);
-			const volume = Math.pow(Math.PI, 2) * (Math.pow(major_radius, 2) - Math.pow(minor_radius, 2)) * height;
+			const volume = Math.pow(Math.PI, 2) * (Math.pow(Number(major_radius.value), 2) - Math.pow(Number(minor_radius.value), 2)) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -473,8 +418,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const side = Number(document.getElementById("side").value);
-			const area = 6 * side * side;
+			const area = 6 * Math.pow(Number(side.value), 2);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -490,10 +434,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 2 * (length * width + length * height + width * height);
+			const area = 2 * (Number(length.value) * Number(width.value) + Number(length.value) * Number(height.value) + Number(width.value) * Number(height.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -507,8 +448,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const area = 4 * Math.PI * radius * radius;
+			const area = 4 * Math.PI * Math.pow(Number(radius.value), 2);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -523,9 +463,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 2 * Math.PI * radius * (radius + height);
+			const area = 2 * Math.PI * Number(radius.value) * (Number(radius.value) + Number(height.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -540,9 +478,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const slant_height = Number(document.getElementById("slant_height").value);
-			const area = Math.PI * radius * (radius + slant_height);
+			const area = Math.PI * Number(radius.value) * (Number(radius.value) + Number(slant_height.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -557,9 +493,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const base_area = Number(document.getElementById("base_area").value);
-			const perimeter = Number(document.getElementById("perimeter").value);
-			const area = base_area + perimeter.toFixed(2) + "m";
+			const area = Number(base_area.value) + Number(perimeter.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -574,8 +508,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const side = Number(document.getElementById("side").value);
-			const area = 4 * side * side;
+			const area = 4 * Math.pow(Number(side.value), 2);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -591,10 +524,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const length = Number(document.getElementById("length").value);
-			const width = Number(document.getElementById("width").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 2 * height * (length + width);
+			const area = 2 * Number(height.value) * (Number(length.value) + Number(width.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -608,8 +538,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const area = 4 * Math.PI * radius * radius;
+			const area = 4 * Math.PI * Math.pow(Number(radius.value), 2);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -624,9 +553,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const height = Number(document.getElementById("height").value);
-			const area = 2 * Math.PI * radius * height;
+			const area = 2 * Math.PI * Number(radius.value) * Number(height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -641,9 +568,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const radius = Number(document.getElementById("radius").value);
-			const slant_height = Number(document.getElementById("slant_height").value);
-			const area = Math.PI * radius * slant_height;
+			const area = Math.PI * Number(radius.value) * Number(slant_height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -658,9 +583,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const perimeter = Number(document.getElementById("perimeter").value);
-			const slant_height = Number(document.getElementById("slant_height").value);
-			const area = perimeter * slant_height;
+			const area = Number(perimeter.value) * Number(slant_height.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -669,9 +592,9 @@ const shapes = [
 const calculate = (call) => {
 	let shape = shapes[call];
 	const card = document.querySelector(".card");
-	document.getElementById("title").innerHTML = shape.name;
-	document.getElementById("formula").innerHTML = shape.formula;
-	document.getElementById("result").innerHTML = "";
+	title.innerHTML = shape.name;
+	formula.innerHTML = shape.formula;
+	result.innerHTML = "";
 	card.querySelector(".card-body").innerHTML = `
 		<form onsubmit="event.preventDefault(); shapes[${call}].eventListener();">
 				${Object.entries(shape.form.elements).map(([key, value]) => `
