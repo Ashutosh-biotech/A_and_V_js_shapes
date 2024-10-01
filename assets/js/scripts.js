@@ -115,7 +115,7 @@ const shapes = [
 			},
 		},
 		eventListener: () => {
-			const area = 0.5 * Number(n.value) * Math.pow(Number(s.value), 2) * Math.cot(Math.PI / Number(n.value));
+			const area = 0.5 * Number(n.value) * Math.pow(Number(s.value), 2) * (1 / Math.tan(Math.PI / Number(n.value)));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
