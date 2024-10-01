@@ -5,12 +5,12 @@ const shapes = [
 		formula: "length * width",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 			},
 		},
 		eventListener: () => {
-			const area = Number(length.value) * Number(width.value);
+			const area = Number(length_.value) * Number(width.value);
 			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
@@ -156,12 +156,12 @@ const shapes = [
 		formula: "2 * (length + width)",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 			},
 		},
 		eventListener: () => {
-			const perimeter = 2 * (Number(length.value) + Number(width.value));
+			const perimeter = 2 * (Number(length_.value) + Number(width.value));
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -218,12 +218,12 @@ const shapes = [
 		formula: "2 * (length + width)",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 			},
 		},
 		eventListener: () => {
-			const perimeter = 2 * (Number(length.value) + Number(width.value));
+			const perimeter = 2 * (Number(length_.value) + Number(width.value));
 			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
@@ -322,13 +322,13 @@ const shapes = [
 		formula: "length * width * height",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 				Height: "height",
 			},
 		},
 		eventListener: () => {
-			const volume = Number(length.value) * Number(width.value) * Number(height.value);
+			const volume = Number(length_.value) * Number(width.value) * Number(height.value);
 			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
@@ -428,13 +428,13 @@ const shapes = [
 		formula: "2(lw + lh + wh)",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 				Height: "height",
 			},
 		},
 		eventListener: () => {
-			const area = 2 * (Number(length.value) * Number(width.value) + Number(length.value) * Number(height.value) + Number(width.value) * Number(height.value));
+			const area = 2 * (Number(length_.value) * Number(width.value) + Number(length_.value) * Number(height.value) + Number(width.value) * Number(height.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
@@ -518,13 +518,13 @@ const shapes = [
 		formula: "2h(l + w)",
 		form: {
 			elements: {
-				Length: "length",
+				Length: "length_",
 				Width: "width",
 				Height: "height",
 			},
 		},
 		eventListener: () => {
-			const area = 2 * Number(height.value) * (Number(length.value) + Number(width.value));
+			const area = 2 * Number(height.value) * (Number(length_.value) + Number(width.value));
 			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
