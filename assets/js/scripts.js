@@ -11,7 +11,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Number(length_.value) * Number(width.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
 	// Area of a triangle
@@ -26,7 +26,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * Number(base.value) * Number(height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
 	// Area of a circle
@@ -40,7 +40,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Math.PI * Math.pow(Number(radius.value));
-			document.getElementById("result").innerHTML = area.toFixed(2) + " m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + " m<sup>2</sup>";
 		}
 	},
 	// Area of a trapezoid
@@ -56,7 +56,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * (Number(base1.value) + Number(base2.value)) * Number(height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a parallelogram
@@ -71,7 +71,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Number(base.value) * Number(height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a rhombus
@@ -86,7 +86,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * Number(d1.value) * Number(d2.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a kite
@@ -101,7 +101,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * Number(d1.value) * Number(d2.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a polygon
@@ -116,7 +116,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * Number(n.value) * Math.pow(Number(s.value), 2) * (1 / Math.tan(Math.PI / Number(n.value)));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a sector
@@ -131,7 +131,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = (Number(angle.value) / 360) * Math.PI * Math.pow(Number(radius.value), 2);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Area of a segment
@@ -146,7 +146,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 0.5 * Math.pow(Number(radius.value), 2) * (Number(angle.value) - Math.sin(Number(angle.value)));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 
@@ -162,7 +162,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = 2 * (Number(length_.value) + Number(width.value));
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a triangle
@@ -178,7 +178,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = Number(a.value) + Number(b.value) + Number(c.value);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a circle
@@ -192,7 +192,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = 2 * Math.PI * Number(radius.value);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a trapezoid
@@ -209,7 +209,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = Number(a.value) + Number(b.value) + Number(c.value) + Number(d.value);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a parallelogram
@@ -224,7 +224,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = 2 * (Number(length_.value) + Number(width.value));
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a rhombus
@@ -238,7 +238,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = 4 * Number(side.value);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a kite
@@ -253,7 +253,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = 2 * (side1 + Number(side2.value));
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a polygon
@@ -268,7 +268,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = Number(n.value) * Number(side.value);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a sector
@@ -283,7 +283,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = Number(radius.value) * (Number(angle.value) + 2);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 	// Perimeter of a segment
@@ -298,7 +298,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const perimeter = Number(radius.value) * (Number(angle.value) + 2);
-			document.getElementById("result").innerHTML = perimeter.toFixed(2) + "m";
+			result.innerHTML = perimeter.toFixed(2) + "m";
 		}
 	},
 
@@ -313,7 +313,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = Math.pow(Number(side.value), 3);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a rectangular prism
@@ -329,7 +329,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = Number(length_.value) * Number(width.value) * Number(height.value);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a sphere
@@ -343,7 +343,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = (4 / 3) * Math.PI * Math.pow(Number(radius.value), 3);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a cylinder
@@ -358,7 +358,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = Math.PI * Math.pow(Number(radius.value), 2) * Number(height.value);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a cone
@@ -373,7 +373,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = (1 / 3) * Math.PI * Math.pow(Number(radius.value), 2) * Number(height.value);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a pyramid
@@ -388,7 +388,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = (1 / 3) * Number(base_area.value) * Number(height.value);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 	// Volume of a toroid
@@ -404,7 +404,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const volume = Math.pow(Math.PI, 2) * (Math.pow(Number(major_radius.value), 2) - Math.pow(Number(minor_radius.value), 2)) * Number(height.value);
-			document.getElementById("result").innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
+			result.innerHTML = volume.toFixed(2) + "m<sup>3</sup>";
 		}
 	},
 
@@ -419,7 +419,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 6 * Math.pow(Number(side.value), 2);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Rectangular Prism
@@ -435,7 +435,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 2 * (Number(length_.value) * Number(width.value) + Number(length_.value) * Number(height.value) + Number(width.value) * Number(height.value));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Sphere
@@ -449,7 +449,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 4 * Math.PI * Math.pow(Number(radius.value), 2);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Cylinder
@@ -464,7 +464,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 2 * Math.PI * Number(radius.value) * (Number(radius.value) + Number(height.value));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Cone
@@ -479,7 +479,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Math.PI * Number(radius.value) * (Number(radius.value) + Number(slant_height.value));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Total Surface Area of a Pyramid
@@ -494,7 +494,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Number(base_area.value) + Number(perimeter.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 
@@ -509,7 +509,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 4 * Math.pow(Number(side.value), 2);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Rectangular Prism
@@ -525,7 +525,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 2 * Number(height.value) * (Number(length_.value) + Number(width.value));
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Sphere
@@ -539,7 +539,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 4 * Math.PI * Math.pow(Number(radius.value), 2);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Cylinder
@@ -554,7 +554,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = 2 * Math.PI * Number(radius.value) * Number(height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Cone
@@ -569,7 +569,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Math.PI * Number(radius.value) * Number(slant_height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 	// Lateral Surface Area of a Pyramid
@@ -584,7 +584,7 @@ const shapes = [
 		},
 		eventListener: () => {
 			const area = Number(perimeter.value) * Number(slant_height.value);
-			document.getElementById("result").innerHTML = area.toFixed(2) + "m<sup>2</sup>";
+			result.innerHTML = area.toFixed(2) + "m<sup>2</sup>";
 		}
 	},
 ];
