@@ -59,12 +59,13 @@ aside {
 					font-size: 16px;
 					cursor: pointer;
 					transition: all 300ms ease;
+
+					&:hover {
+						background-color: #000;
+						color: #fff;
+					}
 				}
 
-				button:hover {
-					background-color: #000;
-					color: #fff;
-				}
 			}
 		}
 	}
@@ -83,8 +84,8 @@ main {
 		width: 450px;
 		background-color: #fff;
 		border-radius: 10px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		padding: 20px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 
 		.card-header {
 			height: 60px;
@@ -109,7 +110,7 @@ main {
 
 		.card-body {
 			margin-top: 50px;
-				
+
 			form {
 				display: flex;
 				flex-direction: column;
